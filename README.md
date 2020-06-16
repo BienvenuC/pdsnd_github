@@ -1,10 +1,7 @@
 This project was created on 16 June 2020
 
-### Project Title
-Replace the Project Title
-
-### Description
-Describe what your project is about and what it does
+### Bikeshare Project
+Learn about bike share use in Chicago, New York City  and Washington, in an interactive way, by computing a variety of descriptive statistics.
 
 ### Files used
 Include the files used
