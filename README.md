@@ -14,4 +14,11 @@ The original data sets can be found [here for Chicago](https://www.divvybikes.co
 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+* Get the month names of the DateTimeIndex:
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.month_name.html
+
+* Convert seconds to hours, minutes, and seconds in Python:
+https://www.geeksforgeeks.org/python-program-to-convert-seconds-into-hours-minutes-and-seconds/
+
+* Combine columns:
+https://stackoverflow.com/questions/17995024/how-to-assign-a-name-to-the-a-size-column
