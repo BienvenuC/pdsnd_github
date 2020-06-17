@@ -107,16 +107,31 @@ def time_stats(df):
     pop_month = df['month'].mode()[0]
     count_pop_month = df['month'].value_counts().max()
     print('    Most Frequent month:', pop_month,'  Count: ',count_pop_month)
+    
+    # display the least common month
+    least_month = df['month'].value_counts().index[-1]
+    count_least_month = df['month'].value_counts().min()
+    print('    Least Frequent month:', least_month,'  Count: ',count_least_month)
 
     # display the most common day of week
     pop_day = df['day_of_week'].mode()[0]
     count_pop_day = df['day_of_week'].value_counts().max()
     print('    Most Frequent day:', pop_day,'  Count: ',count_pop_day)
+    
+    # display the least common day of week
+    least_day = df['day_of_week'].value_counts().index[-1]
+    count_least_day = df['day_of_week'].value_counts().min()
+    print('    Least Frequent day:', least_day,'  Count: ',count_least_day)
 
     # display the most common start hour
     pop_hour = df['hour'].mode()[0]
     count_pop_hour = df['hour'].value_counts().max()
     print('    Most Frequent Start Hour:', pop_hour,'  Count: ',count_pop_hour)
+    
+    # display the least common start hour
+    least_hour = df['hour'].value_counts().index[-1]
+    count_least_hour = df['hour'].value_counts().min()
+    print('    Least Frequent Start Hour:', least_hour,'  Count: ',count_least_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -253,6 +268,10 @@ def display_5_lines(df,start_view):
         response = input('\nWould you like to view 5 lines of raw data? Enter yes or no.\n')
         if response.lower() == 'yes':
             try:
+                # For a better display of raw data
+                print('    ' + '*'*40)
+                print("    DISPLAYING 5 LINES OF RAW DATA")
+                print('    '+ '*'*40)
                 print(df.loc[start_view:,:].head())
                 start_view = df.index[start_view + 5]
             except:
