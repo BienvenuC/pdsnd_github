@@ -17,7 +17,8 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!\n')
     # get user input for city (chicago, new york city, washington).
-    #city_list the city_list
+    
+    # This is the valid input city list
     valid_input_city = ['chicago', 'new york city', 'washington','1','2','3']
     response1 = ""
     while response1 not in valid_input_city :
