@@ -126,6 +126,11 @@ def time_stats(df):
     pop_hour = df['hour'].mode()[0]
     count_pop_hour = df['hour'].value_counts().max()
     print('    Most Frequent Start Hour:', pop_hour,'  Count: ',count_pop_hour)
+    
+    # display the least common start hour
+    least_hour = df['hour'].value_counts().index[-1]
+    count_least_hour = df['hour'].value_counts().min()
+    print('    Least Frequent Start Hour:', least_hour,'  Count: ',count_least_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
