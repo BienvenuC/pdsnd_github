@@ -252,6 +252,10 @@ def display_5_lines(df,start_view):
         response = input('\nWould you like to view 5 lines of raw data? Enter yes or no.\n')
         if response.lower() == 'yes':
             try:
+                # For a better display of raw data
+                print('    ' + '*'*40)
+                print("    DISPLAYING 5 LINES OF RAW DATA")
+                print('    '+ '*'*40)
                 print(df.loc[start_view:,:].head())
                 start_view = df.index[start_view + 5]
             except:
