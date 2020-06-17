@@ -106,6 +106,11 @@ def time_stats(df):
     pop_month = df['month'].mode()[0]
     count_pop_month = df['month'].value_counts().max()
     print('    Most Frequent month:', pop_month,'  Count: ',count_pop_month)
+    
+    # display the least common month
+    least_month = df['month'].value_counts().index[-1]
+    count_least_month = df['month'].value_counts().min()
+    print('    Least Frequent month:', least_month,'  Count: ',count_least_month)
 
     # display the most common day of week
     pop_day = df['day_of_week'].mode()[0]
