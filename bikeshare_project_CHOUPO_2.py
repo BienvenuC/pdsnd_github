@@ -116,6 +116,11 @@ def time_stats(df):
     pop_day = df['day_of_week'].mode()[0]
     count_pop_day = df['day_of_week'].value_counts().max()
     print('    Most Frequent day:', pop_day,'  Count: ',count_pop_day)
+    
+    # display the least common day of week
+    least_day = df['day_of_week'].value_counts().index[-1]
+    count_least_day = df['day_of_week'].value_counts().min()
+    print('    Least Frequent day:', least_day,'  Count: ',count_least_day)
 
     # display the most common start hour
     pop_hour = df['hour'].mode()[0]
