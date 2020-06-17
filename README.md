@@ -12,6 +12,8 @@ The three cities data sets are:
 These are just randomly selected data for the first six months of 2017 for each city.
 The original data sets can be found [here for Chicago](https://www.divvybikes.com/system-data) or [here for New York City](https://www.citibikenyc.com/system-data) or [here for Washington](https://www.capitalbikeshare.com/system-data).
 
+### Python version
+This project was developed with [Python 3.7.3](https://www.python.org/downloads/release/python-373/)
 
 ### Credits
 * Get the month names of the DateTimeIndex:
